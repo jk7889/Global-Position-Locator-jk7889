@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/6dac316dc8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="https://bootswatch.com/4/flatly/bootstrap.min.css">
+</head>
+<body onload="generateRandomCoordinates();" style="background-color:#363742">
+        <nav class="navbar navbar-expand-sm navbar-dark" style="background-color:orangered">
+                <div class="container">
+                        <a class="navbar-brand pt-0 pb-0" href="#"><span><img src="img/earth.png" alt="Earth" width="80"></span>Global Position Locator</a><!--earth.png is the logo image-->
+                            
+                              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" >
+                                    <span class="navbar-toggler-icon"></span>
+                                    </button>
+              
+                          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                          <ul class="navbar-nav ml-auto" >
+                              <li class="nav-item">
+                                  <a class="nav-link"  href="index.html" >Home</a>
+                              </li>
+                              <li class="nav-item pl-3">
+                                  <a class="nav-link"   href="geolocation.html" >Geolocation</a>
+                              </li>
+                              <li class="nav-item pl-3">
+                                  <a class="nav-link"   href="maps.html">Maps</a>
+                              </li>
+                              <li class="nav-item pl-3 active">
+                                  <a class="nav-link"   href="about.html"><b><u>About</u></b></a>
+                              </li>
+                          </ul>
+                      </div>
+                    </div>
+                      </nav>
+                <div class="container">
+                    <h1 class="text-light pb-3 pt-3"><i class="fas fa-info-circle"></i> About</h1> <!--info-circle is the icon image-->
+                <hr style="background-color:#696c8a; margin-top:1px;">
+                    <p class="pl-3 pr-3 pb-3 pt-3 text-light mt-4 mb-4" style="border-left: solid 3px #696c8a; text-align: justify; font-family:Verdana, Geneva, Tahoma, sans-serif; font-size:14pt;">
+                    Using Geolocation<br>
+                    -<mark class="text-light" style="background-color: black;"><abbr title="HyperText Markup Language">HTML5</abbr></mark>
+                    </p>
+                
+                    <table class="table text-light font-weight-bold text-center mt-2 mb-4" style="width:100%;" id="output">
+                        <thead class="bg-info">
+                            <tr>
+                                <th>Latitude</th>
+                                <th>Longitude</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="bg-primary">
+                                <td id="0">?</td> <!--latitude-->
+                                <td id="20">?</td><!--longitude-->
+                            </tr>
+                            <tr class="alert-success">
+                                <td id="1">?</td>
+                                <td id="21">?</td>
+                            </tr>
+                            <tr class="bg-danger">
+                                <td id="2">?</td>
+                                <td id="22">?</td>
+                            </tr>
+                            <tr class="bg-warning">
+                                <td id="3">?</td>
+                                <td id="23">?</td>
+                            </tr>
+                            <tr>
+                                <td id="4">?</td>
+                                <td id="24">?</td>
+                            </tr>
+                            <tr class="bg-primary">
+                                <td id="5">?</td>
+                                <td id="25">?</td>
+                            </tr>
+                            <tr class="bg-success">
+                                <td id="6">?</td>
+                                <td id="26">?</td>
+                            </tr>
+                            <tr class="bg-danger">
+                                <td id="7">?</td>
+                                <td id="27">?</td>
+                            </tr>
+                            <tr class="bg-warning">
+                                <td id="8">?</td>
+                                <td id="28">?</td>
+                            </tr>
+                            <tr>
+                                <td id="9">?</td>
+                                <td id="29">?</td>
+                            </tr>
+                            <tr class="bg-primary">
+                                <td id="10">?</td>
+                                <td id="30">?</td>
+                            </tr>
+                            <tr class="bg-success">
+                                <td id="11">?</td>
+                                <td id="31">?</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                
+        </div>
+    <footer class="text-center"><kbd>&copy; 2022 J. Khosla. All rights reserved.</kbd>
+    </footer>
+    <br>
+    <br>
+
+    <script src="bootstrap/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="bootstrap/bootstrap.min.js"></script> 
+    <script src="js/maps.js"></script>
+</body>
+</html>

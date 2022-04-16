@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geolocation</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://bootswatch.com/4/flatly/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/6dac316dc8.js" crossorigin="anonymous"></script>
+  
+   
+   
+</head>
+<body onload="initMap();" style="background-color:#363742">
+        <nav class="navbar navbar-expand-sm navbar-dark glyphicon" style="background-color:orangered">
+                <div class="container">
+                    <a class="navbar-brand pt-0 pb-0" href="#"><span><img src="img/earth.png" alt="Earth" width="80"></span>Global Position Locator</a><!--earth.png is the logo image-->
+                            
+                              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" >
+                                    <span class="navbar-toggler-icon"></span>
+                                    </button>
+              
+                          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                          <ul class="navbar-nav ml-auto" >
+                              <li class="nav-item">
+                                  <a class="nav-link"  href="index.html" >Home</a>
+                              </li>
+                              <li class="nav-item pl-3 active">
+                                  <a class="nav-link"   href="geolocation.html" ><b><u>Geolocation</u></b></a>
+                              </li>
+                              <li class="nav-item pl-3">
+                                  <a class="nav-link"   href="maps.html">Maps</a>
+                              </li>
+                              <li class="nav-item pl-3">
+                                  <a class="nav-link"   href="about.html" >About</a>
+                              </li>
+                          </ul>
+                      </div>
+                    </div>
+                      </nav>
+                      <br>
+                    
+                    
+
+        <div class="container">
+                <h1 class="text-light pb-3"><i class="fas fa-map-marker-alt"></i> Geolocation in HTML5</h1> <!--map-marker-alt is the icon image-->
+                <hr style="background-color:#696c8a;">
+                    <p class="pl-3 pr-3 pb-3 pt-3 text-light mt-4 mb-4" style="border-left: solid 3px #696c8a; text-align: justify; font-family:Verdana, Geneva, Tahoma, sans-serif; font-size:14pt;">
+                    <mark class="text-light" style="background-color: black;">HTML5</mark><i> geolocation <abbr title="Application Program Interface">API</abbr> </i>
+                   is used to get the <i>geographical</i> position of a user.<br>
+                   <i>Geolocation</i> is most accurate for devices with <i><abbr title="Global Positioning System">GPS</abbr></i>.<br>
+                    -<span style="color:orangered">HTML5</span>
+                    </p>
+                <hr class="mb-4" style="background-color:#696c8a;">
+                <hr class="mb-4" style="background-color:#696c8a;">
+
+                <table class="table text-light font-weight-bold text-center mt-2 mb-4" style="width:100%;">
+                    <thead style="background-color: orangered;">
+                        <tr>
+                            <th>Latitude</th>
+                            <th>Longitude</th>
+                            <th>Message</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-danger">
+                        <tr>
+                            <td id="latt">?</td>
+                            <td id="lonn">?</td>
+                            <td id="msg">?</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button class="btn btn-lg text-light" onclick="getLocation()" style="background-color: orangered; border-radius:0;">Get Coordinates</button>
+                <hr class="mt-4 mb-4" style="background-color:#696c8a;">
+                <div id="map" style="height: 600px; width: 100%;"></div>
+                <hr class="mt-4" style="background-color:#696c8a;">
+        </div>
+    <footer class="text-center"><kbd>&copy; 2022 J. Khosla. All rights reserved.</kbd>
+    </footer>
+    <br>
+    <br>
+
+    <script src="bootstrap/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="bootstrap/bootstrap.min.js"></script> 
+    <script src="js/config.js"></script>
+    <script src="js/api.js"></script>
+     <script src="js/geolocation.js"></script>
+   
+</body>
+</html> 

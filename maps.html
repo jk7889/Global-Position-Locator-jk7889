@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maps</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/6dac316dc8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="https://bootswatch.com/4/flatly/bootstrap.min.css">
+</head>
+<body onload="initMap();" style="background-color:#363742">
+        <nav class="navbar navbar-expand-sm navbar-dark" style="background-color:orangered">
+                <div class="container-fluid">
+                        <a class="navbar-brand pt-0 pb-0" href="#"><span><img src="img/earth.png" alt="Earth" width="80"></span>Global Position Locator</a><!--earth.png is the logo image-->
+                            
+                              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" >
+                                    <span class="navbar-toggler-icon"></span>
+                                    </button>
+              
+                          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                          <ul class="navbar-nav ml-auto" >
+                              <li class="nav-item">
+                                  <a class="nav-link"  href="index.html" >Home</a>
+                              </li>
+                              <li class="nav-item pl-3">
+                                  <a class="nav-link"   href="geolocation.html" >Geolocation</a>
+                              </li>
+                              <li class="nav-item pl-3 active">
+                                  <a class="nav-link"   href="maps.html"><b><u>Maps</u></b></a>
+                              </li>
+                              <li class="nav-item pl-3">
+                                  <a class="nav-link"   href="about.html" >About</a>
+                              </li>
+                          </ul>
+                      </div>
+                    </div>
+                      </nav>
+                <div class="container-fluid">
+                    <h1 class="text-light pb-3 pt-3"><i class="fas fa-map-marked-alt"></i> Maps</h1> <!--map-marked-alt is the icon image-->
+                <hr style="background-color:#696c8a; margin-top:1px;">
+                    <p class="pl-3 pr-3 pb-3 pt-3 text-light mt-4 mb-4" style="border-left: solid 3px #696c8a; text-align: justify; font-family:Verdana, Geneva, Tahoma, sans-serif; font-size:14pt;">
+                    Using Geolocation<br>
+                    -<mark class="text-light" style="background-color: black;"><abbr title="HyperText Markup Language">HTML5</abbr></mark>
+                    </p>
+
+                    <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <table class="table text-light font-weight-bold text-center mt-2 mb-4" style="width:100%;" id="output">
+                        <thead class="bg-info">
+                            <tr>
+                                <th>Latitude</th>
+                                <th>Longitude</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="bg-primary">
+                                <td id="0">?</td> <!--latitude-->
+                                <td id="20" onmouseover="displayMap(this)">?</td><!--longitude-->
+                            </tr>
+                            <tr class="alert-success">
+                                <td id="1">?</td>
+                                <td id="21" onmouseover="displayMap(this)">?</td>
+                            </tr>
+                            <tr class="bg-danger">
+                                <td id="2">?</td>
+                                <td id="22" onmouseover="displayMap(this)">?</td>
+                            </tr>
+                            <tr class="bg-warning">
+                                <td id="3">?</td>
+                                <td id="23" onmouseover="displayMap(this)">?</td>
+                            </tr>
+                            <tr>
+                                <td id="4">?</td>
+                                <td id="24" onmouseover="displayMap(this)">?</td>
+                            </tr>
+                            <tr class="bg-primary">
+                                <td id="5">?</td>
+                                <td id="25" onmouseover="displayMap(this)">?</td>
+                            </tr>
+                            <tr class="bg-success">
+                                <td id="6">?</td>
+                                <td id="26" onmouseover="displayMap(this)">?</td>
+                            </tr>
+                            <tr class="bg-danger">
+                                <td id="7">?</td>
+                                <td id="27" onmouseover="displayMap(this)">?</td>
+                            </tr>
+                            <tr class="bg-warning">
+                                <td id="8">?</td>
+                                <td id="28" onmouseover="displayMap(this)">?</td>
+                            </tr>
+                            <tr>
+                                <td id="9">?</td>
+                                <td id="29" onmouseover="displayMap(this)">?</td>
+                            </tr>
+                            <tr class="bg-primary">
+                                <td id="10">?</td>
+                                <td id="30" onmouseover="displayMap(this)">?</td>
+                            </tr>
+                            <tr id="hell" class="bg-success">
+                                <td id="11">?</td>
+                                <td id="31" onmouseover="displayMap(this)">?</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </div>
+
+                    <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                    <div id="map" style="height: 600px; width: 100%;" class="mt-2"></div>
+                    </div>
+                    </div>
+                
+        </div>
+        <br>
+    <footer class="text-center"><kbd>&copy; 2022 J. Khosla. All rights reserved.</kbd>
+    </footer>
+    <br>
+    <br>
+
+    <script src="bootstrap/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="bootstrap/bootstrap.min.js"></script> 
+    <script src="js/config.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/maps.js"></script>
+     
+</body>
+</html>

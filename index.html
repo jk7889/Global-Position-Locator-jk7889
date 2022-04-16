@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="bootstrap/bootstrap.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/6dac316dc8.js" crossorigin="anonymous"></script>
+   <link rel="stylesheet" type="text/css" href="https://bootswatch.com/4/flatly/bootstrap.min.css">
+   <script src="js/home.js"></script>
+</head>
+<body onload="loadinfo();" style="background-color:#363742">
+    <nav class="navbar navbar-expand-sm navbar-dark" style="background-color:orangered">
+        <div class="container">
+                <a class="navbar-brand pt-0 pb-0" href="#"><span><img src="img/earth.png" alt="Earth" width="80"></span>Global Position Locator</a><!--earth.png is the logo image-->
+                    
+                      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" >
+                            <span class="navbar-toggler-icon"></span>
+                            </button>
+      
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ml-auto" >
+                      <li class="nav-item active">
+                          <a class="nav-link"  href="index.html" ><b><u>Home</u></b></a>
+                      </li>
+                      <li class="nav-item pl-3">
+                          <a class="nav-link"   href="geolocation.html" >Geolocation</a>
+                      </li>
+                      <li class="nav-item pl-3">
+                          <a class="nav-link"   href="maps.html">Maps</a>
+                      </li>
+                      <li class="nav-item pl-3">
+                          <a class="nav-link"   href="about.html" >About</a>
+                      </li>
+                  </ul>
+              </div>
+            </div>
+              </nav>
+            
+            <div class="container">
+                    <h1 class="text-light pb-3"><i class="fab fa-js"></i> Javascript</h1> <!--js is the icon image-->
+                    <hr style="background-color:#696c8a;">
+                        <p class="pl-3 pr-3 pb-3 pt-3 text-light mt-4 mb-4" style="border-left: solid 3px #696c8a; text-align: justify; font-family:Verdana, Geneva, Tahoma, sans-serif; font-size:14pt;">
+                        JavaScript was created in 10 days in May 1995 by <mark class="text-light" style="background-color: black;">Brendan Eich</mark>, then working at <br>
+                        Netscape and now of Mozilla<br>
+                        JavaScript was not always knows as JavaScript: the original name was Mocha, a<br>
+                        name chosen by <mark class="text-light" style="background-color: black;">Marc Andreessen</mark>.<br>
+                        -<span style="color:orangered">The World Wide Web Consortium (W3C)</span>
+                        </p>
+                    <button class="btn btn-lg text-light" style="background-color: orangered; border-radius:0;">Geolocation Information</button>
+
+                    <table class="table text-light font-weight-bold text-center mt-2 mb-4" style="width:100%;">
+                            <tr class="bg-success">
+                              <th>Latitude</th>
+                              <td id="lat"></td>
+                            </tr>
+                            <tr class="bg-info">
+                              <th>Longitude</th>
+                              <td id="long"></td>
+                            </tr>
+                            <tr class="bg-danger">
+                              <th>IP</th>
+                              <td id="ip"></td>
+                            </tr>
+                            <tr class="bg-warning">
+                                <th>City</th>
+                                <td id="city"></td>
+                            </tr>
+                            <tr class="bg-primary">
+                                <th>Region</th>
+                                <td id="reg"></td>
+                            </tr>
+                            <tr class="bg-info">
+                                <th>Country</th>
+                                <td id="cou"></td>
+                            </tr>
+                          </table>
+                   
+                    <hr class="mb-4" style="background-color:#696c8a;">
+            </div>
+               
+        
+    <footer class="text-center"><kbd>&copy; 2022 J. Khosla. All rights reserved.</kbd>
+    </footer>
+    <br>
+    <br>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+   
+</html>
