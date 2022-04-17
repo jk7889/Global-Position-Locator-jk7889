@@ -2,6 +2,5 @@ js/*
 !/js/geolocation.js
 !/js/home.js
 !/js/maps.js
-bootstrap/
-css/
-img/
+!/js/api_sample.js
+
