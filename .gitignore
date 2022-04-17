@@ -1,5 +1,7 @@
-config.js
-api.js
+js/*
+!/js/geolocation.js
+!/js/home.js
+!/js/maps.js
 bootstrap/
 css/
 img/
