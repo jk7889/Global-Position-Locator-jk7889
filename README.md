@@ -22,7 +22,7 @@ A fun website which allows users to find their own coordinates, location, IP Add
 
 # How to use this project
 
-1) Signin to your `gmail` account if you have one > `Google Maps Platform` > Credentials page > click Create credentials > API key
+1) Sign In to your `gmail` account if you have one > `Google Maps Platform` > Credentials page > click Create credentials > API key
 2) Get Google Maps API key > Open **Global-Position-Locator-jk7899** > js > Open `api_sample.js` > put your API Key in `api_key` variable in place of `YOUR_GOOGLE_MAPS_API_KEY_HERE` (as shown in the code below)
 
 ```
