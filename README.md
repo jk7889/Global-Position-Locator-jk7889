@@ -12,11 +12,11 @@ A fun website which allows users to find their own coordinates, location, IP Add
 * **Home** - Shows your position **coordinates**, location including **city**, **region** and **country** and **IP Address**.
 * **Geolocation** - click <img src="img/get_coordinates.PNG" height="20" width="75" /> button and enter any coordinates in **latitude and longitude prompts** and the location will be shown in the map below. Default coordinates are for Abbotsford.
 
-<p><img alt="gif" src="https://github.com/jk7889/Global-Position-Locator-jk7899/blob/main/screenshots/Geolocation.gif" /></p>
+<p><img alt="gif" src="https://github.com/jk7889/Global-Position-Locator-jk7889/blob/main/screenshots/Geolocation.gif" /></p>
      
 * **Maps** - Generates and displays **12 random coordinates**. On mouse hover, each coordinate pair displays its **location** on the map. This allows users to find some random locations across the world which might turn into their **next destination for vacation**.
 
-<p><img alt="gif" src="https://github.com/jk7889/Global-Position-Locator-jk7899/blob/main/screenshots/Maps.gif" /></p>
+<p><img alt="gif" src="https://github.com/jk7889/Global-Position-Locator-jk7889/blob/main/screenshots/Maps.gif" /></p>
 
 * **About** - Generates **12 random coordinates** which a user can enter on `Geolocation` page to discover a new place.
 
@@ -32,5 +32,5 @@ document.write('<script async defer src="' + api_url + '"></script>');
 ```
 # Challenge
 
-Try to find **my location** (at the time when I uploaded this project) using **Global Position Locator jk7899** system after I gave away my coordinates in one of the screenshots of this project
+Try to find **my location** (at the time when I uploaded this project) using **Global Position Locator jk7889** system after I gave away my coordinates in one of the screenshots of this project
 
