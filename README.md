@@ -32,5 +32,7 @@ document.write('<script async defer src="' + api_url + '"></script>');
 ```
 # Challenge
 
-Try to find **my location** (at the time when I uploaded this project) using **Global Position Locator jk7889** system after I gave away my coordinates in one of the screenshots of this project
+Try to find **my location** (at the time when I uploaded this project) using **Global Position Locator jk7889** system after I gave away my coordinates in one of the screenshots of this project<br><br><br>
+
+### "Suggestions and project improvements are invited!"	:grinning:
 
